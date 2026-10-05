@@ -1,0 +1,1 @@
+Linux 9e8fd6d016501fbcf6d8f047af4976473de3fc32-6ff9b49547-rhvrx 6.6.97+ #1 SMP Fri Aug 22 11:53:37 UTC 2025 x86_64 GNU/Linux
