@@ -20,9 +20,11 @@ Date: 2026-10-05
 | Routing output file | Not generated: the live pipeline stopped at API authentication before producing routing_decisions.json. Offline routing evidence is in `evidence/01-policy/routing.txt`. |
 | auto_approve / human_review / spot_check counts | N/A for live output; routing test evidence includes a deterministic 10-decision case with 7 auto_approve and 3 human_review. |
 
-### 1a Retry boundary
+### 1a Retry boundary and learner-created perturbation
 
-The perturbation test `evidence/01-policy/perturbation.txt` includes the required-field/missing-source behavior. A missing required field is classified as `missing_source`; the test for `endorsements_absent` returns `RetryFutileEscalation` after exactly one API call. Retrying is futile because the source field is absent rather than malformed. Another API call cannot recover information that is not present in the source, so escalation is safer than repeatedly asking the model to invent or guess the value.
+The learner-created policy perturbation removed the `ENDORSEMENTS` section from the actual input file `data/policies/POL-2025-001.txt`. The exact input change is captured in `01-policy-pipeline/perturbation-system1-diff.txt`. The expected safety boundary is that a required source field that is absent should be classified as `missing_source` rather than repeatedly retried or invented.
+
+The existing retry test suite provides supporting evidence for that boundary: the `endorsements_absent` case returns `RetryFutileEscalation` after exactly one API call. This test is supporting system evidence, not the learner-created perturbation itself. A live extraction run against the modified policy was attempted, but the configured endpoint rejected the project's default model because it was not available for the organization, so no live extraction result is claimed.
 
 ### 1b Reading the router
 

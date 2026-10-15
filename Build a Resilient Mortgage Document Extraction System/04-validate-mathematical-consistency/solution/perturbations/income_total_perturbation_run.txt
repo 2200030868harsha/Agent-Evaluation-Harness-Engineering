@@ -1,0 +1,6 @@
+LEARNER-CREATED PERTURBATION
+Input file: perturbations/income_total_perturbation.txt
+Stated monthly total: $5000.00
+Calculated monthly total: $4500.00
+Validation result: consistent=False
+Discrepancies: [Discrepancy(field='total_monthly_income', calculated=4500.0, stated=5000.0, delta=-500.0)]

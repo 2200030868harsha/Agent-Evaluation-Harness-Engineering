@@ -1,0 +1,9 @@
+LEARNER-CREATED PERTURBATION — Mortgage Income Document
+
+Borrower: Test Borrower
+
+Base Monthly Income: $4,000.00
+Bonus Monthly Income: $500.00
+Commission Monthly Income: $0.00
+
+Stated Monthly Total: $5,000.00

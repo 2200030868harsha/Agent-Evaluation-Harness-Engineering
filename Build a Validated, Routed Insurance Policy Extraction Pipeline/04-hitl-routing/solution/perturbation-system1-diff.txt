@@ -1,0 +1,16 @@
+diff --git a/Build a Validated, Routed Insurance Policy Extraction Pipeline/04-hitl-routing/solution/data/policies/POL-2025-001.txt b/Build a Validated, Routed Insurance Policy Extraction Pipeline/04-hitl-routing/solution/data/policies/POL-2025-001.txt
+index 2ec5262..cb2c6d3 100644
+--- a/Build a Validated, Routed Insurance Policy Extraction Pipeline/04-hitl-routing/solution/data/policies/POL-2025-001.txt	
++++ b/Build a Validated, Routed Insurance Policy Extraction Pipeline/04-hitl-routing/solution/data/policies/POL-2025-001.txt	
+@@ -26,11 +26,6 @@ COVERAGES AND LIMITS
+ 
+ DEDUCTIBLE (Primary):  $500
+ 
+-ENDORSEMENTS
+-   - Rental Reimbursement Endorsement (AU-21)  $40/day, 30 day max
+-   - Roadside Assistance Coverage (AU-44)
+-   - Additional Insured: Anywhere Auto Leasing LLC
+-
+ EXCLUSIONS
+    - Racing or speed contest activity
+    - Use of vehicle for ride-share / TNC purposes without endorsement
